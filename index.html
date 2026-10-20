@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#172f52">
+  <meta name="description" content="Pesan sambal dan makanan khas Maumere. Siap antar dari Dapur Sambal Maumere.">
+  <title>Dapur Sambal Maumere — Pesan Antar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="tenun" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <nav class="nav-inner" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda" aria-label="Dapur Sambal Maumere, beranda">
+        <span class="brand-mark" aria-hidden="true">🌶️</span>
+        <span>
+          <span class="brand-name">Dapur Sambal</span>
+          <span class="brand-sub">Maumere · Flores, NTT</span>
+        </span>
+      </a>
+
+      <div class="nav-actions">
+        <a class="nav-link" href="#menu">Menu</a>
+        <button class="owner-trigger" id="ownerOpen" type="button">Pemilik</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="customerPage">
+    <section class="hero" id="beranda" aria-labelledby="heroTitle">
+      <div class="hero-content">
+        <p class="eyebrow"><span aria-hidden="true">✦</span> Pedasnya bikin rindu</p>
+        <h1 id="heroTitle">Rasa Maumere, langsung ke meja.</h1>
+        <p class="hero-copy">
+          Sambal khas Flores, lauk rumahan, dan rasa pedas yang dibuat dengan hati.
+          Pesan sekarang, kami siapkan untuk diantar.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#menu">Pesan sekarang <span aria-hidden="true">→</span></a>
+          <a class="button secondary" href="#informasi">Lokasi &amp; jam buka</a>
+        </div>
+      </div>
+
+      <svg class="hero-art" viewBox="0 0 460 380" role="img" aria-labelledby="dishTitle dishDesc">
+        <title id="dishTitle">Ilustrasi ayam sambal khas Maumere</title>
+        <desc id="dishDesc">Ayam goreng dengan sambal merah, tomat, cabai, dan nasi di atas piring.</desc>
+        <ellipse cx="235" cy="315" rx="178" ry="24" fill="#d9c7a6"/>
+        <ellipse cx="230" cy="270" rx="183" ry="75" fill="#fffdf7" stroke="#172f52" stroke-width="8"/>
+        <ellipse cx="230" cy="269" rx="148" ry="53" fill="#f5ead4" stroke="#e7ad32" stroke-width="4"/>
+
+        <!-- Nasi -->
+        <path d="M119 260c5-42 31-70 70-70 42 0 67 27 72 70-22 18-47 26-75 26-25 0-49-8-67-26Z" fill="#fffdf7" stroke="#e8dfcc" stroke-width="4"/>
+        <path d="M140 238c15-20 39-28 64-25M145 253c18-17 43-20 67-16M160 268c17-13 39-15 57-12" fill="none" stroke="#eee6d8" stroke-width="5" stroke-linecap="round"/>
+
+        <!-- Ayam -->
+        <path d="M248 197c15-26 47-32 68-15 19 15 19 44 3 63-20 25-58 36-85 19-21-14-20-43 14-67Z" fill="#bf6428" stroke="#8d3d1e" stroke-width="5"/>
+        <path d="M271 204c13-11 29-12 39-3M261 222c17-11 40-11 56-1M257 240c19-9 40-7 54 3" fill="none" stroke="#e7ad32" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="322" cy="257" r="15" fill="#f4d6aa" stroke="#8d3d1e" stroke-width="5"/>
+        <path d="M330 263l21 10" stroke="#f4d6aa" stroke-width="9" stroke-linecap="round"/>
+
+        <!-- Sambal -->
+        <path d="M213 246c11-19 28-21 39-12 11 9 11 23 0 34-12 12-32 10-40-1-5-6-5-14 1-21Z" fill="#c6382f"/>
+        <circle cx="225" cy="241" r="4" fill="#f7cf57"/>
+        <circle cx="241" cy="251" r="4" fill="#f7cf57"/>
+        <circle cx="224" cy="261" r="3.5" fill="#f7cf57"/>
+
+        <!-- Tomat -->
+        <path d="M108 192c8-17 29-22 44-13 16 10 17 31 5 44-13 13-34 12-45-1-7-8-9-20-4-30Z" fill="#d84a36"/>
+        <path d="M130 178l-2-12 10 8 10-8-1 13" fill="#426b45" stroke="#426b45" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M320 162c8-17 28-20 40-10 14 11 14 29 3 41-11 12-31 12-42 0-8-8-8-21-1-31Z" fill="#d84a36"/>
+        <path d="M337 151l-1-12 10 8 10-8-1 13" fill="#426b45" stroke="#426b45" stroke-width="5" stroke-linejoin="round"/>
+
+        <!-- Cabai -->
+        <path d="M106 125c14-17 32-18 47-7-7 16-23 28-40 28-9-1-13-11-7-21Z" fill="#bd2926"/>
+        <path d="M106 124l-10-7" stroke="#426b45" stroke-width="6" stroke-linecap="round"/>
+        <path d="M330 109c15-15 34-13 45 0-9 15-25 24-41 22-9-2-11-13-4-22Z" fill="#bd2926"/>
+        <path d="M331 107l-9-8" stroke="#426b45" stroke-width="6" stroke-linecap="round"/>
+        <path d="M75 182l4 10m287-85 8 3" stroke="#e7ad32" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+    </section>
+
+    <section class="section" id="menu" aria-labelledby="menuTitle">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Dari dapur kami</p>
+          <h2 id="menuTitle">Pilih menu favoritmu</h2>
+          <p>Harga belum termasuk ongkos kirim.</p>
+        </div>
+      </div>
+
+      <div class="tabs" id="menuTabs" role="tablist" aria-label="Kategori menu"></div>
+      <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section" id="informasi" aria-labelledby="infoTitle">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Silakan mampir atau pesan antar</p>
+          <h2 id="infoTitle">Informasi restoran</h2>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="info-icon" aria-hidden="true">📍</span>
+          <h3>Alamat dapur</h3>
+          <p>Alamat dapur, Maumere, Sikka, NTT</p>
+        </article>
+        <article class="info-card">
+          <span class="info-icon" aria-hidden="true">🕙</span>
+          <h3>Jam buka</h3>
+          <p>Setiap hari, 09.30–22.00 WITA</p>
+        </article>
+        <article class="info-card">
+          <span class="info-icon" aria-hidden="true">🛵</span>
+          <h3>Pesan antar</h3>
+          <p>Ongkos kirim dikonfirmasi penjual lewat chat WhatsApp.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-icon" aria-hidden="true">💳</span>
+          <h3>Pembayaran</h3>
+          <p>Tunai atau transfer. Detail pembayaran dikonfirmasi lewat chat.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <section class="owner-page" id="ownerPage" aria-labelledby="ownerTitle" hidden>
+    <div class="owner-header">
+      <div>
+        <p class="eyebrow">Area pemilik</p>
+        <h1 id="ownerTitle">Dasbor pesanan</h1>
+        <p class="muted">Contoh dasbor berjalan sementara di halaman ini.</p>
+      </div>
+      <button class="button secondary" id="backToCustomer" type="button">Kembali ke halaman pelanggan</button>
+    </div>
+
+    <div class="notice owner-notice">
+      Data pesanan dasbor ini hanya sementara di browser. Nama, nomor WhatsApp,
+      alamat, dan catatan pelanggan tidak dicatat di dasbor.
+    </div>
+
+    <div class="stats-grid" id="statsGrid"></div>
+
+    <section class="owner-panel" aria-labelledby="soldTitle">
+      <h2 id="soldTitle">Pengaturan menu habis</h2>
+      <p class="muted">Menu yang ditandai habis tidak dapat ditambahkan ke keranjang.</p>
+      <div class="sold-settings" id="soldSettings"></div>
+    </section>
+
+    <section class="owner-panel" aria-labelledby="ordersTitle">
+      <h2 id="ordersTitle">Pesanan pada sesi ini</h2>
+      <div id="ordersContainer"></div>
+    </section>
+  </section>
+
+  <div class="cart-bar" id="cartBar">
+    <div class="cart-inner">
+      <div class="cart-summary" aria-live="polite">
+        <strong id="cartCount">Keranjang kosong</strong>
+        <span id="cartTotal">Tambahkan menu untuk mulai memesan</span>
+      </div>
+      <button class="cart-open" id="openCart" type="button" disabled>Lihat pesanan</button>
+    </div>
+  </div>
+
+  <!-- Jendela keranjang -->
+  <div class="modal-backdrop" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle" hidden>
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <h2 id="cartTitle">Rincian pesanan</h2>
+          <p class="modal-intro">Periksa pesanan, lalu isi data pengantaran.</p>
+        </div>
+        <button class="icon-button" type="button" data-close="cartModal" aria-label="Tutup">×</button>
+      </div>
+
+      <div class="order-lines" id="cartLines"></div>
+
+      <div class="notice">
+        Ongkos kirim belum termasuk total dan akan dikonfirmasi penjual lewat WhatsApp.
+      </div>
+
+      <form id="checkoutForm">
+        <div class="field">
+          <label for="customerName">Nama penerima</label>
+          <input id="customerName" name="nama" autocomplete="name" required maxlength="80" placeholder="Nama Anda">
+        </div>
+        <div class="field">
+          <label for="customerPhone">Nomor WhatsApp</label>
+          <input id="customerPhone" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required maxlength="24" placeholder="Contoh: 081234567890">
+        </div>
+        <div class="field">
+          <label for="customerAddress">Alamat pengantaran</label>
+          <textarea id="customerAddress" name="alamat" autocomplete="street-address" required maxlength="300" placeholder="Nama jalan, kelurahan, patokan, dan detail alamat"></textarea>
+        </div>
+        <div class="field">
+          <label for="customerNote">Catatan <span class="muted">(opsional)</span></label>
+          <textarea id="customerNote" name="catatan" maxlength="300" placeholder="Contoh: sambal dipisah"></textarea>
+        </div>
+        <button class="button primary full" type="submit">Kirim pesanan lewat WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Jendela masuk pemilik -->
+  <div class="modal-backdrop" id="ownerModal" role="dialog" aria-modal="true" aria-labelledby="ownerLoginTitle" hidden>
+    <div class="modal modal-small">
+      <div class="modal-header">
+        <div>
+          <h2 id="ownerLoginTitle">Masuk pemilik</h2>
+          <p class="modal-intro">Masukkan PIN untuk membuka dasbor contoh.</p>
+        </div>
+        <button class="icon-button" type="button" data-close="ownerModal" aria-label="Tutup">×</button>
+      </div>
+      <form id="ownerLoginForm">
+        <div class="field">
+          <label for="ownerPin">PIN pemilik</label>
+          <input id="ownerPin" type="password" inputmode="numeric" autocomplete="current-password" required>
+        </div>
+        <p class="form-error" id="ownerPinError" aria-live="polite"></p>
+        <button class="button primary full" type="submit">Buka dasbor</button>
+      </form>
+      <p class="hint">PIN contoh: 1111. Ubah nilai PIN di berkas JavaScript.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Dapur Sambal Maumere · Rasa khas Flores, dibuat dengan hati.</p>
+  </footer>
+
+  <div class="tenun tenun-bottom" aria-hidden="true"></div>
+</body>
+</html>
